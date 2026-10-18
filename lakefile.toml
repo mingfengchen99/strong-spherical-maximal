@@ -1,0 +1,321 @@
+name = "StrongSpherical"
+version = "0.1.0"
+defaultTargets = ["Definitions", "Quadratic1D", "ProductOscillation", "QuadraticGraph", "JointOscillation", "AmplitudeBounds", "GramKernel", "SchurTest", "KernelTTStar", "QuadraticGraphL2", "EllipsoidGraph", "EllipsoidAmplitude", "SliceMeasure", "MaximalLinearization", "NormalKernelRegularity", "EllipsoidSlice", "EllipsoidPatches", "CoordinateTransport", "EllipsoidLinearized", "LocalEstimate", "DyadicRadii", "ProductCoordinates", "CoordinateMarginals", "MarginalEnergy", "FrequencyDecomposition", "GenericKernelRegularity", "MarginalLocalEstimate", "MarginalC1", "CoordinateSubsets", "DilationL2", "FourierCutoff", "FourierMiddle", "ProductSmoothing", "LayercakeL2", "HardyLittlewoodOneDim", "RectangularMaximal", "ScalarSmoothing", "SmoothingError", "FourierKernel", "MarginalSmoothing", "MaximalWeight", "SmoothingGeometry", "ProductTail", "MiddleMaximalL2", "MarginalFiberL2", "MaximalDensity", "ErrorMaximalL2", "KernelSmoothing", "DyadicKernelScales", "ConvolutionSmoothing", "HighMaximalL2", "MaximalAssembly", "Lemma14Constants", "LowMaximalL2", "FourierProjectionBridges", "MarginalInduction", "Lemma14Assembly", "KernelC1Norm", "HighProjectionL2", "LowProjectionL2", "GlobalKernelEstimate", "NormalKernelC1", "LogarithmicScales", "NormalKernelGlobal", "NormalFrequencyPieces", "NormalCutoffs", "NormalFourierScaling", "NormalDecomposition", "SpherePolar", "NormalRadialDensity", "ScalarApproximation", "QuadraticRadialChange", "NormalSphereLimit", "NormalCutoffBounds", "DilationL1", "NormalKernelL1", "KernelLInfinity", "NormalPieceEndpoints", "LayercakePowerIntegral", "LayercakeLp", "HardyLittlewoodLp", "RectangularMaximalLp", "KernelMaximalLp", "RectangularAverages", "RectangularAveragesLp", "NormalPieceSize", "NormalPieceLp", "InterpolationPowerIntegral", "MaximalChebyshev", "InterpolationNorm", "InterpolationScaling", "InterpolationLayercake", "KernelTruncation", "KernelInterpolationFinite", "KernelInterpolationAboveTwo", "InterpolationParameters", "NormalPieceInterpolation", "GeometricDecay", "NormalPieceSummation", "SphericalDomination", "SphericalRegularity", "SphericalLInfinity", "SphericalLp", "Main"]
+moreLeanArgs = ["-DautoImplicit=false"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "360da6fa66c1273b76b6b2d8c5666fd5ac2e3b56"
+
+[[lean_lib]]
+name = "Definitions"
+
+[[lean_lib]]
+name = "Quadratic1D"
+
+[[lean_lib]]
+name = "ProductOscillation"
+
+[[lean_lib]]
+name = "QuadraticGraph"
+
+[[lean_lib]]
+name = "JointOscillation"
+
+[[lean_lib]]
+name = "AmplitudeBounds"
+
+[[lean_lib]]
+name = "GramKernel"
+
+[[lean_lib]]
+name = "SchurTest"
+
+[[lean_lib]]
+name = "KernelTTStar"
+
+[[lean_lib]]
+name = "QuadraticGraphL2"
+
+[[lean_lib]]
+name = "EllipsoidGraph"
+
+[[lean_lib]]
+name = "EllipsoidAmplitude"
+
+[[lean_lib]]
+name = "SliceMeasure"
+
+[[lean_lib]]
+name = "MaximalLinearization"
+
+[[lean_lib]]
+name = "NormalKernelRegularity"
+
+[[lean_lib]]
+name = "EllipsoidSlice"
+
+[[lean_lib]]
+name = "EllipsoidPatches"
+
+[[lean_lib]]
+name = "CoordinateTransport"
+
+[[lean_lib]]
+name = "EllipsoidLinearized"
+
+[[lean_lib]]
+name = "LocalEstimate"
+
+[[lean_lib]]
+name = "DyadicRadii"
+
+[[lean_lib]]
+name = "ProductCoordinates"
+
+[[lean_lib]]
+name = "CoordinateMarginals"
+
+[[lean_lib]]
+name = "MarginalEnergy"
+
+[[lean_lib]]
+name = "FrequencyDecomposition"
+
+[[lean_lib]]
+name = "GenericKernelRegularity"
+
+[[lean_lib]]
+name = "MarginalLocalEstimate"
+
+[[lean_lib]]
+name = "MarginalC1"
+
+[[lean_lib]]
+name = "CoordinateSubsets"
+
+[[lean_lib]]
+name = "DilationL2"
+
+[[lean_lib]]
+name = "FourierCutoff"
+
+[[lean_lib]]
+name = "FourierMiddle"
+
+[[lean_lib]]
+name = "ProductSmoothing"
+
+[[lean_lib]]
+name = "LayercakeL2"
+
+[[lean_lib]]
+name = "HardyLittlewoodOneDim"
+
+[[lean_lib]]
+name = "RectangularMaximal"
+
+[[lean_lib]]
+name = "ScalarSmoothing"
+
+[[lean_lib]]
+name = "SmoothingError"
+
+[[lean_lib]]
+name = "FourierKernel"
+
+[[lean_lib]]
+name = "MarginalSmoothing"
+
+[[lean_lib]]
+name = "MaximalWeight"
+
+[[lean_lib]]
+name = "SmoothingGeometry"
+
+[[lean_lib]]
+name = "ProductTail"
+
+[[lean_lib]]
+name = "MiddleMaximalL2"
+
+[[lean_lib]]
+name = "MarginalFiberL2"
+
+[[lean_lib]]
+name = "MaximalDensity"
+
+[[lean_lib]]
+name = "ErrorMaximalL2"
+
+[[lean_lib]]
+name = "KernelSmoothing"
+
+[[lean_lib]]
+name = "DyadicKernelScales"
+
+[[lean_lib]]
+name = "ConvolutionSmoothing"
+
+[[lean_lib]]
+name = "HighMaximalL2"
+
+[[lean_lib]]
+name = "MaximalAssembly"
+
+[[lean_lib]]
+name = "Lemma14Constants"
+
+[[lean_lib]]
+name = "LowMaximalL2"
+
+[[lean_lib]]
+name = "FourierProjectionBridges"
+
+[[lean_lib]]
+name = "MarginalInduction"
+
+[[lean_lib]]
+name = "Lemma14Assembly"
+
+[[lean_lib]]
+name = "KernelC1Norm"
+
+[[lean_lib]]
+name = "HighProjectionL2"
+
+[[lean_lib]]
+name = "LowProjectionL2"
+
+[[lean_lib]]
+name = "GlobalKernelEstimate"
+
+[[lean_lib]]
+name = "NormalKernelC1"
+
+[[lean_lib]]
+name = "LogarithmicScales"
+
+[[lean_lib]]
+name = "NormalKernelGlobal"
+
+[[lean_lib]]
+name = "NormalFrequencyPieces"
+
+[[lean_lib]]
+name = "NormalCutoffs"
+
+[[lean_lib]]
+name = "NormalFourierScaling"
+
+[[lean_lib]]
+name = "NormalDecomposition"
+
+[[lean_lib]]
+name = "SpherePolar"
+
+[[lean_lib]]
+name = "NormalRadialDensity"
+
+[[lean_lib]]
+name = "ScalarApproximation"
+
+[[lean_lib]]
+name = "QuadraticRadialChange"
+
+[[lean_lib]]
+name = "NormalSphereLimit"
+
+[[lean_lib]]
+name = "NormalCutoffBounds"
+
+[[lean_lib]]
+name = "DilationL1"
+
+[[lean_lib]]
+name = "NormalKernelL1"
+
+[[lean_lib]]
+name = "KernelLInfinity"
+
+[[lean_lib]]
+name = "NormalPieceEndpoints"
+
+[[lean_lib]]
+name = "LayercakePowerIntegral"
+
+[[lean_lib]]
+name = "LayercakeLp"
+
+[[lean_lib]]
+name = "HardyLittlewoodLp"
+
+[[lean_lib]]
+name = "RectangularMaximalLp"
+
+[[lean_lib]]
+name = "KernelMaximalLp"
+
+[[lean_lib]]
+name = "RectangularAverages"
+
+[[lean_lib]]
+name = "RectangularAveragesLp"
+
+[[lean_lib]]
+name = "NormalPieceSize"
+
+[[lean_lib]]
+name = "NormalPieceLp"
+
+[[lean_lib]]
+name = "InterpolationPowerIntegral"
+
+[[lean_lib]]
+name = "MaximalChebyshev"
+
+[[lean_lib]]
+name = "InterpolationNorm"
+
+[[lean_lib]]
+name = "InterpolationScaling"
+
+[[lean_lib]]
+name = "InterpolationLayercake"
+
+[[lean_lib]]
+name = "KernelTruncation"
+
+[[lean_lib]]
+name = "KernelInterpolationFinite"
+
+[[lean_lib]]
+name = "KernelInterpolationAboveTwo"
+
+[[lean_lib]]
+name = "InterpolationParameters"
+
+[[lean_lib]]
+name = "NormalPieceInterpolation"
+
+[[lean_lib]]
+name = "GeometricDecay"
+
+[[lean_lib]]
+name = "NormalPieceSummation"
+
+[[lean_lib]]
+name = "SphericalDomination"
+
+[[lean_lib]]
+name = "SphericalRegularity"
+
+[[lean_lib]]
+name = "SphericalLInfinity"
+
+[[lean_lib]]
+name = "SphericalLp"
+
+[[lean_lib]]
+name = "Main"
