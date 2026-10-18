@@ -1,0 +1,94 @@
+import InterpolationPowerIntegral
+import MaximalChebyshev
+import InterpolationNorm
+import InterpolationScaling
+import InterpolationLayercake
+import KernelTruncation
+import KernelInterpolationFinite
+import KernelInterpolationAboveTwo
+import InterpolationParameters
+import NormalPieceInterpolation
+
+/-! Transitive axiom audit of every new public declaration. -/
+
+#print axioms StrongSpherical.InterpolationPowerIntegral.lintegral_power_Ioo
+#print axioms StrongSpherical.InterpolationPowerIntegral.lintegral_power_Ioi
+#print axioms StrongSpherical.MaximalChebyshev.complex_energy
+#print axioms StrongSpherical.MaximalChebyshev.measure_lt_le_energy
+#print axioms StrongSpherical.MaximalChebyshev.measure_lt_le_of_eLpNorm
+#print axioms StrongSpherical.InterpolationNorm.eLpNorm_le_of_energy
+#print axioms StrongSpherical.InterpolationScaling.balancingThreshold
+#print axioms StrongSpherical.InterpolationScaling.balancingThreshold_pos
+#print axioms StrongSpherical.InterpolationScaling.log_balancingThreshold
+#print axioms StrongSpherical.InterpolationScaling.balanced_terms
+#print axioms StrongSpherical.InterpolationLayercake.lintegral_high_tail
+#print axioms StrongSpherical.InterpolationLayercake.lintegral_low_tail
+#print axioms StrongSpherical.InterpolationLayercake.lintegral_rpow_eq_tail_real
+#print axioms StrongSpherical.InterpolationLayercake.energy_real_le_of_two_tail
+#print axioms StrongSpherical.InterpolationLayercake.energy_le_of_two_tail
+#print axioms StrongSpherical.InterpolationLayercake.energy_le_of_tail
+#print axioms StrongSpherical.KernelTruncation.highPart
+#print axioms StrongSpherical.KernelTruncation.lowPart
+#print axioms StrongSpherical.KernelTruncation.measurable_highPart
+#print axioms StrongSpherical.KernelTruncation.measurable_lowPart
+#print axioms StrongSpherical.KernelTruncation.highPart_add_lowPart
+#print axioms StrongSpherical.KernelTruncation.enorm_highPart
+#print axioms StrongSpherical.KernelTruncation.enorm_lowPart
+#print axioms StrongSpherical.KernelTruncation.highPart_energy
+#print axioms StrongSpherical.KernelTruncation.lowPart_energy
+#print axioms StrongSpherical.KernelTruncation.eLpNorm_rpow_eq_energy
+#print axioms StrongSpherical.KernelTruncation.energy_lt_top
+#print axioms StrongSpherical.KernelTruncation.norm_highPart_rpow_le
+#print axioms StrongSpherical.KernelTruncation.norm_lowPart_rpow_le
+#print axioms StrongSpherical.KernelTruncation.highPart_energy_le
+#print axioms StrongSpherical.KernelTruncation.lowPart_energy_le
+#print axioms StrongSpherical.KernelTruncation.memLp_highPart
+#print axioms StrongSpherical.KernelTruncation.memLp_lowPart
+#print axioms StrongSpherical.KernelTruncation.norm_lowPart_le
+#print axioms StrongSpherical.KernelTruncation.eLpNorm_lowPart_top_le
+#print axioms StrongSpherical.KernelTruncation.memLp_lowPart_top
+#print axioms StrongSpherical.KernelTruncation.convolution_parts
+#print axioms StrongSpherical.KernelTruncation.strongKernelMaximal_le_parts
+#print axioms StrongSpherical.KernelInterpolationFinite.interpolationConstant
+#print axioms StrongSpherical.KernelInterpolationFinite.interpolationConstant_pos
+#print axioms StrongSpherical.KernelInterpolationFinite.distribution_bound
+#print axioms StrongSpherical.KernelInterpolationFinite.strongKernelMaximal_Lp_measurable
+#print axioms StrongSpherical.KernelInterpolationFinite.strongKernelMaximal_Lp
+#print axioms StrongSpherical.KernelInterpolationAboveTwo.thresholdScale
+#print axioms StrongSpherical.KernelInterpolationAboveTwo.energyConstant
+#print axioms StrongSpherical.KernelInterpolationAboveTwo.normConstant
+#print axioms StrongSpherical.KernelInterpolationAboveTwo.thresholdScale_pos
+#print axioms StrongSpherical.KernelInterpolationAboveTwo.energyConstant_pos
+#print axioms StrongSpherical.KernelInterpolationAboveTwo.normConstant_pos
+#print axioms StrongSpherical.KernelInterpolationAboveTwo.measure_tail_le_high
+#print axioms StrongSpherical.KernelInterpolationAboveTwo.high_truncation_integral
+#print axioms StrongSpherical.KernelInterpolationAboveTwo.interpolation_energy_measurable
+#print axioms StrongSpherical.KernelInterpolationAboveTwo.exists_interpolation_above_two
+#print axioms StrongSpherical.InterpolationParameters.a
+#print axioms StrongSpherical.InterpolationParameters.critical
+#print axioms StrongSpherical.InterpolationParameters.theta
+#print axioms StrongSpherical.InterpolationParameters.theta_formula
+#print axioms StrongSpherical.InterpolationParameters.theta_pos
+#print axioms StrongSpherical.InterpolationParameters.theta_lt_one
+#print axioms StrongSpherical.InterpolationParameters.interpolation_identity
+#print axioms StrongSpherical.InterpolationParameters.exists_below_two_parameters
+#print axioms StrongSpherical.InterpolationParameters.above_two_weight
+#print axioms StrongSpherical.InterpolationParameters.below_two_frequency_coefficient
+#print axioms StrongSpherical.InterpolationParameters.above_two_frequency_coefficient
+#print axioms StrongSpherical.NormalPieceInterpolation.below_two_piece_Lp
+#print axioms StrongSpherical.NormalPieceInterpolation.sharp_below_two_piece_Lp
+#print axioms StrongSpherical.NormalPieceInterpolation.above_two_piece_Lp
+#print axioms StrongSpherical.NormalPieceInterpolation.sharp_piece_Lp
+
+/-! Complete elaborated types of the main review entry points. -/
+
+#check StrongSpherical.InterpolationLayercake.energy_le_of_two_tail
+#check StrongSpherical.InterpolationLayercake.energy_le_of_tail
+#check StrongSpherical.KernelInterpolationFinite.strongKernelMaximal_Lp
+#check StrongSpherical.KernelInterpolationAboveTwo.exists_interpolation_above_two
+#check StrongSpherical.InterpolationScaling.balanced_terms
+#check StrongSpherical.InterpolationParameters.exists_below_two_parameters
+#check StrongSpherical.NormalPieceInterpolation.below_two_piece_Lp
+#check StrongSpherical.NormalPieceInterpolation.sharp_below_two_piece_Lp
+#check StrongSpherical.NormalPieceInterpolation.above_two_piece_Lp
+#check StrongSpherical.NormalPieceInterpolation.sharp_piece_Lp

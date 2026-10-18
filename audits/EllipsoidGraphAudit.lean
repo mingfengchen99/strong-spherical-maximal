@@ -1,0 +1,41 @@
+import EllipsoidGraph
+
+/-! Transitive axiom audit of every public declaration written in EllipsoidGraph.lean. -/
+
+#print axioms StrongSpherical.EllipsoidGraph.slicePoint
+#print axioms StrongSpherical.EllipsoidGraph.slicePoint_castSucc
+#print axioms StrongSpherical.EllipsoidGraph.slicePoint_last
+#print axioms StrongSpherical.EllipsoidGraph.liftedInput
+#print axioms StrongSpherical.EllipsoidGraph.patchOffset
+#print axioms StrongSpherical.EllipsoidGraph.slice_sub_liftedInput
+#print axioms StrongSpherical.EllipsoidGraph.coefficients
+#print axioms StrongSpherical.EllipsoidGraph.graphGap_eq_normal_sq_mul_form
+#print axioms StrongSpherical.EllipsoidGraph.ellipsoidForm_eq_graphGap_div
+#print axioms StrongSpherical.EllipsoidGraph.coefficients_bounds
+#print axioms StrongSpherical.EllipsoidGraph.inverseFourier_eq_integral
+#print axioms StrongSpherical.EllipsoidGraph.frequency_reparametrization
+#print axioms StrongSpherical.EllipsoidGraph.local_radius_sq_bounds
+#print axioms StrongSpherical.EllipsoidGraph.frequencyAmplitude
+#print axioms StrongSpherical.EllipsoidGraph.measurable_frequencyAmplitude
+#print axioms StrongSpherical.EllipsoidGraph.frequencyAmplitude_band
+#print axioms StrongSpherical.EllipsoidGraph.frequencyAmplitude_control
+#print axioms StrongSpherical.EllipsoidGraph.frequencyAmplitude_indicator_bound
+#print axioms StrongSpherical.EllipsoidGraph.normalFrequency_eq_graphKernel
+#print axioms StrongSpherical.EllipsoidGraph.hasDerivAt_liftedNormal
+#print axioms StrongSpherical.EllipsoidGraph.sqrtJacobian
+#print axioms StrongSpherical.EllipsoidGraph.graphAmplitude
+#print axioms StrongSpherical.EllipsoidGraph.inverseDilation_neg
+#print axioms StrongSpherical.EllipsoidGraph.inputKernel_eq_changed_kernel
+#print axioms StrongSpherical.EllipsoidGraph.exists_uniform_slice_bound
+
+#print StrongSpherical.EllipsoidGraph.coefficients
+#print StrongSpherical.EllipsoidGraph.frequencyAmplitude
+#print StrongSpherical.EllipsoidGraph.sqrtJacobian
+#print StrongSpherical.EllipsoidGraph.graphAmplitude
+#check StrongSpherical.EllipsoidGraph.graphGap_eq_normal_sq_mul_form
+#check StrongSpherical.EllipsoidGraph.coefficients_bounds
+#check StrongSpherical.EllipsoidGraph.frequency_reparametrization
+#check StrongSpherical.EllipsoidGraph.frequencyAmplitude_control
+#check StrongSpherical.EllipsoidGraph.normalFrequency_eq_graphKernel
+#check StrongSpherical.EllipsoidGraph.inputKernel_eq_changed_kernel
+#check StrongSpherical.EllipsoidGraph.exists_uniform_slice_bound

@@ -1,0 +1,41 @@
+import GramKernel
+
+/-! Transitive axiom audit of every public declaration written in GramKernel.lean. -/
+
+#print axioms StrongSpherical.GramKernel.frequencyMeasure
+#print axioms StrongSpherical.GramKernel.frequencyPair
+#print axioms StrongSpherical.GramKernel.pairIntegral
+#print axioms StrongSpherical.GramKernel.gramIntegrand
+#print axioms StrongSpherical.GramKernel.oscillation_mul_conj
+#print axioms StrongSpherical.GramKernel.integrable_pairAmplitude
+#print axioms StrongSpherical.GramKernel.integrable_gramIntegrand
+#print axioms StrongSpherical.GramKernel.inputKernel_mul_conj_eq_frequencyIntegral
+#print axioms StrongSpherical.GramKernel.integral_gramIntegrand_input
+#print axioms StrongSpherical.GramKernel.integrable_frequencyPair_mul_pairIntegral
+#print axioms StrongSpherical.GramKernel.gramKernel_eq_frequencyIntegral
+#print axioms StrongSpherical.GramKernel.gramKernel_eq_double_frequencyIntegral
+#print axioms StrongSpherical.GramKernel.frequencyAnnulus
+#print axioms StrongSpherical.GramKernel.FrequencyControl
+#print axioms StrongSpherical.GramKernel.frequencyControl_of_indicator_bound
+#print axioms StrongSpherical.GramKernel.FrequencyControl.support_subset_interval
+#print axioms StrongSpherical.GramKernel.FrequencyControl.eq_zero_of_not_mem_interval
+#print axioms StrongSpherical.GramKernel.FrequencyControl.integrable
+#print axioms StrongSpherical.GramKernel.frequencyControl_of_joint_bound
+#print axioms StrongSpherical.GramKernel.frequencyRectangle
+#print axioms StrongSpherical.GramKernel.integrableOn_frequencyDifference
+#print axioms StrongSpherical.GramKernel.integral_frequencyDifference_le
+#print axioms StrongSpherical.GramKernel.norm_gramKernel_le_of_pair_bound
+#print axioms StrongSpherical.GramKernel.exists_uniform_gramKernel_bound
+
+/- Inspect the original Gram kernel, frequency controls, and uniform quantifiers. -/
+#print StrongSpherical.QuadraticGraph.gramKernel
+#print StrongSpherical.GramKernel.frequencyMeasure
+#print StrongSpherical.GramKernel.gramIntegrand
+#print StrongSpherical.GramKernel.frequencyAnnulus
+#print StrongSpherical.GramKernel.FrequencyControl
+#check StrongSpherical.GramKernel.integrable_gramIntegrand
+#check StrongSpherical.GramKernel.gramKernel_eq_double_frequencyIntegral
+#check StrongSpherical.GramKernel.frequencyControl_of_joint_bound
+#check StrongSpherical.GramKernel.integral_frequencyDifference_le
+#check StrongSpherical.GramKernel.norm_gramKernel_le_of_pair_bound
+#check StrongSpherical.GramKernel.exists_uniform_gramKernel_bound

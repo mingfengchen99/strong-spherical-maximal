@@ -1,0 +1,55 @@
+import NormalCutoffBounds
+import DilationL1
+import NormalKernelL1
+import KernelLInfinity
+import NormalPieceEndpoints
+
+/-! Public declarations added for (6.9) and (6.14). -/
+
+#print axioms StrongSpherical.NormalCutoffBounds.chi_re_nonneg
+#print axioms StrongSpherical.NormalCutoffBounds.chi_re_le_one
+#print axioms StrongSpherical.NormalCutoffBounds.norm_chi_eq_re
+#print axioms StrongSpherical.NormalCutoffBounds.norm_chi_le_one
+#print axioms StrongSpherical.NormalCutoffBounds.chi_eq_coe_norm
+#print axioms StrongSpherical.NormalCutoffBounds.density_one_bound
+#print axioms StrongSpherical.DilationL1.lintegral_eq_dilation
+#print axioms StrongSpherical.DilationL1.norm_dilatedKernel
+#print axioms StrongSpherical.DilationL1.enorm_dilatedKernel
+#print axioms StrongSpherical.DilationL1.integral_norm_dilatedKernel
+#print axioms StrongSpherical.DilationL1.lintegral_enorm_dilatedKernel
+#print axioms StrongSpherical.DilationL1.eLpNorm_dilatedKernel_one
+#print axioms StrongSpherical.DilationL1.integrable_dilatedKernel
+#print axioms StrongSpherical.DilationL1.integral_dilatedKernel
+#print axioms StrongSpherical.DilationL1.norm_dilatedKernel_le
+#print axioms StrongSpherical.DilationL1.eLpNorm_dilatedKernel_top_le_of_bound
+#print axioms StrongSpherical.NormalKernelL1.integral_scaled_inverse_norm
+#print axioms StrongSpherical.NormalKernelL1.integrable_scaled_inverse_norm
+#print axioms StrongSpherical.NormalKernelL1.integrable_normalKernel
+#print axioms StrongSpherical.NormalKernelL1.normalKernel_L1_le
+#print axioms StrongSpherical.NormalKernelL1.normalKernel_L1_bound
+#print axioms StrongSpherical.NormalKernelL1.integral_norm_const_mul
+#print axioms StrongSpherical.NormalKernelL1.integral_kernelPiece_zero
+#print axioms StrongSpherical.NormalKernelL1.integral_kernelPiece_succ
+#print axioms StrongSpherical.NormalKernelL1.uniform_kernelPiece_L1
+#print axioms StrongSpherical.KernelLInfinity.kernelConvolution_enorm_le
+#print axioms StrongSpherical.KernelLInfinity.continuous_dilated_convolution
+#print axioms StrongSpherical.KernelLInfinity.lowerSemicontinuous_strongKernelMaximal
+#print axioms StrongSpherical.KernelLInfinity.measurable_strongKernelMaximal
+#print axioms StrongSpherical.KernelLInfinity.strongKernelMaximal_le
+#print axioms StrongSpherical.KernelLInfinity.strongKernelMaximal_LInfinity
+#print axioms StrongSpherical.NormalPieceEndpoints.kernelPiece_eLpNorm_one
+#print axioms StrongSpherical.NormalPieceEndpoints.uniform_piece_endpoints
+#print axioms StrongSpherical.NormalPieceEndpoints.uniform_piece_pointwise
+
+/-! Review entry points and complete elaborated types. -/
+
+#check StrongSpherical.NormalCutoffBounds.density_one_bound
+#check StrongSpherical.NormalKernelL1.normalKernel_L1_bound
+#check StrongSpherical.NormalKernelL1.uniform_kernelPiece_L1
+#check StrongSpherical.DilationL1.lintegral_enorm_dilatedKernel
+#check StrongSpherical.DilationL1.integral_norm_dilatedKernel
+#check StrongSpherical.DilationL1.integrable_dilatedKernel
+#check StrongSpherical.KernelLInfinity.lowerSemicontinuous_strongKernelMaximal
+#check StrongSpherical.KernelLInfinity.strongKernelMaximal_LInfinity
+#check StrongSpherical.NormalPieceEndpoints.uniform_piece_endpoints
+#check StrongSpherical.NormalPieceEndpoints.uniform_piece_pointwise

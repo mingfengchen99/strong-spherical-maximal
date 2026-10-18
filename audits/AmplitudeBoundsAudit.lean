@@ -1,0 +1,46 @@
+import AmplitudeBounds
+
+/-! Transitive axiom audit of every public declaration written in AmplitudeBounds.lean. -/
+
+#print axioms StrongSpherical.AmplitudeBounds.InputDerivativeBound
+#print axioms StrongSpherical.AmplitudeBounds.inputDerivativeBound_mono
+#print axioms StrongSpherical.AmplitudeBounds.inputDerivativeBound_partial
+#print axioms StrongSpherical.AmplitudeBounds.mixedDerivative_append
+#print axioms StrongSpherical.AmplitudeBounds.coordinateDerivative_conj
+#print axioms StrongSpherical.AmplitudeBounds.mixedDerivative_conj
+#print axioms StrongSpherical.AmplitudeBounds.inputDerivativeBound_conj
+#print axioms StrongSpherical.AmplitudeBounds.coordinateDerivative_add
+#print axioms StrongSpherical.AmplitudeBounds.coordinateDerivative_mul
+#print axioms StrongSpherical.AmplitudeBounds.mixedDerivative_add
+#print axioms StrongSpherical.AmplitudeBounds.norm_mixedDerivative_mul_le
+#print axioms StrongSpherical.AmplitudeBounds.inputDerivativeBound_mul
+#print axioms StrongSpherical.AmplitudeBounds.inputCenter
+#print axioms StrongSpherical.AmplitudeBounds.inputCube
+#print axioms StrongSpherical.AmplitudeBounds.inputSupport_eq_preimage_cube
+#print axioms StrongSpherical.AmplitudeBounds.isCompact_inputCube
+#print axioms StrongSpherical.AmplitudeBounds.measurableSet_inputCube
+#print axioms StrongSpherical.AmplitudeBounds.volume_inputSupport
+#print axioms StrongSpherical.AmplitudeBounds.volume_inputSupport_lt_top
+#print axioms StrongSpherical.AmplitudeBounds.real_volume_inputSupport
+#print axioms StrongSpherical.AmplitudeBounds.isCompact_inputSupport
+#print axioms StrongSpherical.AmplitudeBounds.measurableSet_inputSupport
+#print axioms StrongSpherical.AmplitudeBounds.integral_norm_le_boxVolume
+#print axioms StrongSpherical.AmplitudeBounds.tsupport_subset_inputSupport
+#print axioms StrongSpherical.AmplitudeBounds.hasCompactSupport_of_inputSupport
+#print axioms StrongSpherical.AmplitudeBounds.inputDerivativeBound_pairAmplitude
+#print axioms StrongSpherical.AmplitudeBounds.pairSeminormConstant
+#print axioms StrongSpherical.AmplitudeBounds.pairSeminormConstant_nonneg
+#print axioms StrongSpherical.AmplitudeBounds.amplitudeSeminorm_pair_le
+#print axioms StrongSpherical.AmplitudeBounds.norm_integral_pairAmplitude_le_uniform
+#print axioms StrongSpherical.AmplitudeBounds.exists_uniform_pair_oscillation_bound
+
+/- Inspect the actual derivative assumptions, amplitude constant, and uniform quantifiers. -/
+#print StrongSpherical.AmplitudeBounds.InputDerivativeBound
+#print StrongSpherical.AmplitudeBounds.pairSeminormConstant
+#check StrongSpherical.AmplitudeBounds.norm_mixedDerivative_mul_le
+#check StrongSpherical.AmplitudeBounds.inputDerivativeBound_pairAmplitude
+#check StrongSpherical.AmplitudeBounds.volume_inputSupport
+#check StrongSpherical.AmplitudeBounds.integral_norm_le_boxVolume
+#check StrongSpherical.AmplitudeBounds.amplitudeSeminorm_pair_le
+#check StrongSpherical.AmplitudeBounds.norm_integral_pairAmplitude_le_uniform
+#check StrongSpherical.AmplitudeBounds.exists_uniform_pair_oscillation_bound

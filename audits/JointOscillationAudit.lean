@@ -1,0 +1,56 @@
+import JointOscillation
+
+/-! Transitive axiom audit of every public declaration written in JointOscillation.lean. -/
+
+#print axioms StrongSpherical.JointOscillation.weightedModulation
+#print axioms StrongSpherical.JointOscillation.continuous_weightedModulation
+#print axioms StrongSpherical.JointOscillation.hasLineDerivAt_weightedModulation
+#print axioms StrongSpherical.JointOscillation.weighted_integration_by_parts
+#print axioms StrongSpherical.JointOscillation.weighted_integration_by_parts_twice
+#print axioms StrongSpherical.JointOscillation.norm_integral_weighted_le
+#print axioms StrongSpherical.JointOscillation.norm_integral_weighted_le_frequencyDecay
+#print axioms StrongSpherical.JointOscillation.spatialDerivativeList
+#print axioms StrongSpherical.JointOscillation.length_spatialDerivativeList
+#print axioms StrongSpherical.JointOscillation.nodup_spatialDerivativeList
+#print axioms StrongSpherical.JointOscillation.castSucc_mem_spatialDerivativeList
+#print axioms StrongSpherical.JointOscillation.last_not_mem_spatialDerivativeList
+#print axioms StrongSpherical.JointOscillation.spatialDerivatives
+#print axioms StrongSpherical.JointOscillation.spatialFactor
+#print axioms StrongSpherical.JointOscillation.continuous_spatialFactor
+#print axioms StrongSpherical.JointOscillation.spatialFactor_normal_invariant
+#print axioms StrongSpherical.JointOscillation.inputWave
+#print axioms StrongSpherical.JointOscillation.normalPrimitive
+#print axioms StrongSpherical.JointOscillation.hasDerivAt_normalPrimitive
+#print axioms StrongSpherical.JointOscillation.inputWaves
+#print axioms StrongSpherical.JointOscillation.inputPrimitives
+#print axioms StrongSpherical.JointOscillation.continuous_inputWaves
+#print axioms StrongSpherical.JointOscillation.hasDerivAt_inputPrimitives
+#print axioms StrongSpherical.JointOscillation.weight_empty_eq_inputWave
+#print axioms StrongSpherical.JointOscillation.weight_spatial_eq_weightedModulation
+#print axioms StrongSpherical.JointOscillation.spatial_integration_by_parts
+#print axioms StrongSpherical.JointOscillation.amplitudeSeminorm
+#print axioms StrongSpherical.JointOscillation.amplitudeSeminorm_nonneg
+#print axioms StrongSpherical.JointOscillation.contDiff_spatialDerivatives
+#print axioms StrongSpherical.JointOscillation.integrable_spatialDerivatives
+#print axioms StrongSpherical.JointOscillation.integrable_normalDerivatives_spatialDerivatives
+#print axioms StrongSpherical.JointOscillation.norm_spatialFactor_quadraticPrimitive_le
+#print axioms StrongSpherical.JointOscillation.norm_integral_inputWave_le
+#print axioms StrongSpherical.JointOscillation.inputWave_quadratic_eq_oscillation
+#print axioms StrongSpherical.JointOscillation.graphPair_oscillation_eq
+#print axioms StrongSpherical.JointOscillation.norm_integral_graphPair_le
+#print axioms StrongSpherical.JointOscillation.exists_uniform_graphPair_bound
+#print axioms StrongSpherical.JointOscillation.tsupport_pairAmplitude_subset_right
+#print axioms StrongSpherical.JointOscillation.hasCompactSupport_pairAmplitude
+#print axioms StrongSpherical.JointOscillation.contDiff_pairAmplitude
+#print axioms StrongSpherical.JointOscillation.norm_integral_pairAmplitude_le
+
+/- Inspect the actual derivative quantities and the complete hypotheses. -/
+#print StrongSpherical.JointOscillation.spatialDerivativeList
+#print StrongSpherical.JointOscillation.spatialDerivatives
+#print StrongSpherical.JointOscillation.amplitudeSeminorm
+#check StrongSpherical.JointOscillation.weighted_integration_by_parts_twice
+#check StrongSpherical.JointOscillation.spatial_integration_by_parts
+#check StrongSpherical.JointOscillation.norm_integral_inputWave_le
+#check StrongSpherical.JointOscillation.norm_integral_graphPair_le
+#check StrongSpherical.JointOscillation.exists_uniform_graphPair_bound
+#check StrongSpherical.JointOscillation.norm_integral_pairAmplitude_le

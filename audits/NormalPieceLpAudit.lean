@@ -1,0 +1,95 @@
+import LayercakePowerIntegral
+import LayercakeLp
+import HardyLittlewoodLp
+import RectangularMaximalLp
+import KernelMaximalLp
+import RectangularAverages
+import RectangularAveragesLp
+import NormalPieceSize
+import NormalPieceLp
+
+/-! Transitive axiom audit of all new public declarations. -/
+
+#print axioms StrongSpherical.LayercakePowerIntegral.coefficient_pos
+#print axioms StrongSpherical.LayercakePowerIntegral.integral_power_interval
+#print axioms StrongSpherical.LayercakePowerIntegral.high_tail_coefficient
+#print axioms StrongSpherical.LayercakeLp.tailCoefficient
+#print axioms StrongSpherical.LayercakeLp.tailCoefficient_pos
+#print axioms StrongSpherical.LayercakeLp.lintegral_rpow_eq_tail
+#print axioms StrongSpherical.LayercakeLp.lintegral_high_tail
+#print axioms StrongSpherical.LayercakeLp.lintegral_rpow_le_of_high_tail
+#print axioms StrongSpherical.HardyLittlewoodLp.boundConstant
+#print axioms StrongSpherical.HardyLittlewoodLp.boundConstant_pos
+#print axioms StrongSpherical.HardyLittlewoodLp.rationalMaximal_Lp_real
+#print axioms StrongSpherical.HardyLittlewoodLp.rationalMaximal_Lp_ennreal
+#print axioms StrongSpherical.HardyLittlewoodLp.exists_rationalMaximal_Lp
+#print axioms StrongSpherical.RectangularMaximalLp.measurable_ennreal_rpow
+#print axioms StrongSpherical.RectangularMaximalLp.controllingMaximal_rpow_of_oneDim
+#print axioms StrongSpherical.RectangularMaximalLp.eLpNorm_ofReal_rpow
+#print axioms StrongSpherical.RectangularMaximalLp.eLpNorm_controllingMaximal_of_oneDim
+#print axioms StrongSpherical.RectangularMaximalLp.exists_controllingMaximal_rpow
+#print axioms StrongSpherical.RectangularMaximalLp.exists_controllingMaximal_Lp
+#print axioms StrongSpherical.KernelMaximalLp.boxWeightConstant
+#print axioms StrongSpherical.KernelMaximalLp.boxMaximalConstant
+#print axioms StrongSpherical.KernelMaximalLp.boxWeightConstant_pos
+#print axioms StrongSpherical.KernelMaximalLp.boxMaximalConstant_pos
+#print axioms StrongSpherical.KernelMaximalLp.box_weight_lower
+#print axioms StrongSpherical.KernelMaximalLp.norm_kernel_le_unitWeight
+#print axioms StrongSpherical.KernelMaximalLp.norm_dilatedKernel_le_productWeight
+#print axioms StrongSpherical.KernelMaximalLp.strongKernelMaximal_le_controlling
+#print axioms StrongSpherical.KernelMaximalLp.continuous_dilated_convolution
+#print axioms StrongSpherical.KernelMaximalLp.lowerSemicontinuous_strongKernelMaximal
+#print axioms StrongSpherical.KernelMaximalLp.measurable_strongKernelMaximal
+#print axioms StrongSpherical.KernelMaximalLp.strongKernelMaximal_Lp_of_controlling
+#print axioms StrongSpherical.KernelMaximalLp.exists_strongKernelMaximal_Lp
+#print axioms StrongSpherical.RectangularAverages.rectangle
+#print axioms StrongSpherical.RectangularAverages.rectangleVolume
+#print axioms StrongSpherical.RectangularAverages.rectangleVolume_pos
+#print axioms StrongSpherical.RectangularAverages.measurableSet_rectangle
+#print axioms StrongSpherical.RectangularAverages.volume_rectangle
+#print axioms StrongSpherical.RectangularAverages.rectangularAverage
+#print axioms StrongSpherical.RectangularAverages.rectangularMaximal
+#print axioms StrongSpherical.RectangularAverages.kernelConvolution_le_rectangularAverage
+#print axioms StrongSpherical.RectangularAverages.doubleRadii
+#print axioms StrongSpherical.RectangularAverages.rectangleVolume_double
+#print axioms StrongSpherical.RectangularAverages.dilatedKernel_support_rectangle
+#print axioms StrongSpherical.RectangularAverages.strongKernelMaximal_le_rectangular
+#print axioms StrongSpherical.RectangularAveragesLp.scalar_box_weight
+#print axioms StrongSpherical.RectangularAveragesLp.rectangle_density_le_productWeight
+#print axioms StrongSpherical.RectangularAveragesLp.rectangularAverage_le_controlling
+#print axioms StrongSpherical.RectangularAveragesLp.rectangularMaximal_le_controlling
+#print axioms StrongSpherical.RectangularAveragesLp.exists_rectangularMaximal_Lp
+#print axioms StrongSpherical.NormalPieceSize.support_kernelPiece_box
+#print axioms StrongSpherical.NormalPieceSize.uniform_kernelPiece_size
+#print axioms StrongSpherical.NormalPieceLp.uniform_piece_rectangular
+#print axioms StrongSpherical.NormalPieceLp.lowFrequency_pointwise
+#print axioms StrongSpherical.NormalPieceLp.uniform_piece_pointwise
+#print axioms StrongSpherical.NormalPieceLp.uniform_piece_Lp
+#print axioms StrongSpherical.NormalPieceLp.lowFrequency_Lp
+
+/-! Complete elaborated types of the review entry points. -/
+
+#check StrongSpherical.LayercakePowerIntegral.integral_power_interval
+#check StrongSpherical.LayercakeLp.lintegral_rpow_le_of_high_tail
+#check StrongSpherical.HardyLittlewoodLp.exists_rationalMaximal_Lp
+#check StrongSpherical.RectangularMaximalLp.exists_controllingMaximal_Lp
+#check StrongSpherical.RectangularAveragesLp.exists_rectangularMaximal_Lp
+#check StrongSpherical.KernelMaximalLp.exists_strongKernelMaximal_Lp
+#check StrongSpherical.NormalPieceSize.uniform_kernelPiece_size
+#check StrongSpherical.NormalPieceLp.uniform_piece_pointwise
+#check StrongSpherical.NormalPieceLp.uniform_piece_Lp
+#check StrongSpherical.NormalPieceLp.lowFrequency_Lp
+#check StrongSpherical.RectangularAverages.rectangle
+#check StrongSpherical.RectangularAverages.rectangleVolume
+#check StrongSpherical.RectangularAverages.rectangleVolume_pos
+#check StrongSpherical.RectangularAverages.measurableSet_rectangle
+#check StrongSpherical.RectangularAverages.volume_rectangle
+#check StrongSpherical.RectangularAverages.rectangularAverage
+#check StrongSpherical.RectangularAverages.rectangularMaximal
+#check StrongSpherical.RectangularAverages.kernelConvolution_le_rectangularAverage
+#check StrongSpherical.RectangularAverages.doubleRadii
+#check StrongSpherical.RectangularAverages.rectangleVolume_double
+#check StrongSpherical.RectangularAverages.dilatedKernel_support_rectangle
+#check StrongSpherical.RectangularAverages.strongKernelMaximal_le_rectangular
+#check StrongSpherical.NormalPieceLp.uniform_piece_rectangular
+#check StrongSpherical.NormalPieceLp.lowFrequency_pointwise

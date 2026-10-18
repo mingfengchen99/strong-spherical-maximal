@@ -1,0 +1,100 @@
+import NormalCutoffs
+import NormalFourierScaling
+import NormalDecomposition
+
+/-! Public declarations added for the finite Section 6.1 decomposition. -/
+
+#print axioms StrongSpherical.NormalCutoffs.rhoBump
+#print axioms StrongSpherical.NormalCutoffs.rho
+#print axioms StrongSpherical.NormalCutoffs.beta
+#print axioms StrongSpherical.NormalCutoffs.contDiff_rho
+#print axioms StrongSpherical.NormalCutoffs.hasCompactSupport_rho
+#print axioms StrongSpherical.NormalCutoffs.integrable_rho
+#print axioms StrongSpherical.NormalCutoffs.rho_even
+#print axioms StrongSpherical.NormalCutoffs.rho_im
+#print axioms StrongSpherical.NormalCutoffs.rho_re
+#print axioms StrongSpherical.NormalCutoffs.rho_eq_one_of_abs_le
+#print axioms StrongSpherical.NormalCutoffs.rho_eq_one
+#print axioms StrongSpherical.NormalCutoffs.rho_zero
+#print axioms StrongSpherical.NormalCutoffs.rho_eq_zero_of_three_halves_le_abs
+#print axioms StrongSpherical.NormalCutoffs.rho_eq_zero_of_two_le_abs
+#print axioms StrongSpherical.NormalCutoffs.support_rho_subset
+#print axioms StrongSpherical.NormalCutoffs.tsupport_rho_subset_closed
+#print axioms StrongSpherical.NormalCutoffs.tsupport_rho_subset
+#print axioms StrongSpherical.NormalCutoffs.contDiff_beta
+#print axioms StrongSpherical.NormalCutoffs.beta_even
+#print axioms StrongSpherical.NormalCutoffs.beta_im
+#print axioms StrongSpherical.NormalCutoffs.beta_re
+#print axioms StrongSpherical.NormalCutoffs.beta_zero
+#print axioms StrongSpherical.NormalCutoffs.beta_eq_zero_of_abs_lt_half
+#print axioms StrongSpherical.NormalCutoffs.beta_eq_zero_of_two_le_abs
+#print axioms StrongSpherical.NormalCutoffs.support_beta_subset
+#print axioms StrongSpherical.NormalCutoffs.tsupport_beta_subset
+#print axioms StrongSpherical.NormalCutoffs.hasCompactSupport_beta
+#print axioms StrongSpherical.NormalCutoffs.integrable_beta
+#print axioms StrongSpherical.NormalCutoffs.outer
+#print axioms StrongSpherical.NormalCutoffs.inner
+#print axioms StrongSpherical.NormalCutoffs.chi
+#print axioms StrongSpherical.NormalCutoffs.contDiff_chi
+#print axioms StrongSpherical.NormalCutoffs.chi_im
+#print axioms StrongSpherical.NormalCutoffs.chi_radial
+#print axioms StrongSpherical.NormalCutoffs.chi_even
+#print axioms StrongSpherical.NormalCutoffs.outer_eq_one
+#print axioms StrongSpherical.NormalCutoffs.inner_eq_zero
+#print axioms StrongSpherical.NormalCutoffs.chi_eq_one
+#print axioms StrongSpherical.NormalCutoffs.chi_eq_one_of_near_sphere
+#print axioms StrongSpherical.NormalCutoffs.chi_eq_zero_of_norm_le
+#print axioms StrongSpherical.NormalCutoffs.chi_eq_zero_of_le_norm
+#print axioms StrongSpherical.NormalCutoffs.chi_zero
+#print axioms StrongSpherical.NormalCutoffs.support_chi_subset
+#print axioms StrongSpherical.NormalCutoffs.tsupport_chi_subset_closed
+#print axioms StrongSpherical.NormalCutoffs.tsupport_chi_subset
+#print axioms StrongSpherical.NormalCutoffs.hasCompactSupport_chi
+#print axioms StrongSpherical.NormalCutoffs.chi_eq_one_on_sphere
+#print axioms StrongSpherical.NormalFourierScaling.integrable_inverseFourier_integrand
+#print axioms StrongSpherical.NormalFourierScaling.inverseFourier_comp_mul
+#print axioms StrongSpherical.NormalFourierScaling.inverseFourier_difference
+#print axioms StrongSpherical.NormalFourierScaling.inverseFourier_sub
+#print axioms StrongSpherical.NormalFourierScaling.inverseFourier_beta_difference
+#print axioms StrongSpherical.NormalFourierScaling.inverseFourier_beta_difference_of_compact
+#print axioms StrongSpherical.NormalFourierScaling.dyadic_inverse_beta_difference
+#print axioms StrongSpherical.NormalDecomposition.two_mul_inverse_dyadic_succ
+#print axioms StrongSpherical.NormalDecomposition.spectral_telescoping
+#print axioms StrongSpherical.NormalDecomposition.sequence_telescoping
+#print axioms StrongSpherical.NormalDecomposition.spectral_telescoping_Icc
+#print axioms StrongSpherical.NormalDecomposition.inverseRho
+#print axioms StrongSpherical.NormalDecomposition.inverse_rho_eq_schwartz
+#print axioms StrongSpherical.NormalDecomposition.integrable_inverse_rho
+#print axioms StrongSpherical.NormalDecomposition.integral_inverse_rho
+#print axioms StrongSpherical.NormalDecomposition.integrable_inverse_beta
+#print axioms StrongSpherical.NormalDecomposition.lowFrequencyKernel
+#print axioms StrongSpherical.NormalDecomposition.approximateKernel
+#print axioms StrongSpherical.NormalDecomposition.lowFrequencyKernel_eq_normalKernel
+#print axioms StrongSpherical.NormalDecomposition.approximateKernel_zero
+#print axioms StrongSpherical.NormalDecomposition.dyadicPiece_eq_approximateKernel_sub
+#print axioms StrongSpherical.NormalDecomposition.finite_kernel_decomposition
+#print axioms StrongSpherical.NormalDecomposition.finite_kernel_decomposition_Icc
+#print axioms StrongSpherical.NormalDecomposition.kernelPiece
+#print axioms StrongSpherical.NormalDecomposition.kernelPiece_zero
+#print axioms StrongSpherical.NormalDecomposition.kernelPiece_succ
+#print axioms StrongSpherical.NormalDecomposition.contDiff_kernelPiece
+#print axioms StrongSpherical.NormalDecomposition.tsupport_kernelPiece_subset
+#print axioms StrongSpherical.NormalDecomposition.hasCompactSupport_kernelPiece
+#print axioms StrongSpherical.NormalDecomposition.integrable_kernelPiece
+#print axioms StrongSpherical.NormalDecomposition.actual_spectral_decomposition
+#print axioms StrongSpherical.NormalDecomposition.actual_kernel_decomposition
+#print axioms StrongSpherical.NormalDecomposition.sum_kernelPiece
+#print axioms StrongSpherical.NormalDecomposition.actual_positive_piece_L2
+
+/-! Review entry points, with their complete elaborated types. -/
+
+#check StrongSpherical.NormalCutoffs.tsupport_rho_subset
+#check StrongSpherical.NormalCutoffs.tsupport_chi_subset
+#check StrongSpherical.NormalCutoffs.chi_eq_one_on_sphere
+#check StrongSpherical.NormalFourierScaling.inverseFourier_comp_mul
+#check StrongSpherical.NormalDecomposition.integral_inverse_rho
+#check StrongSpherical.NormalDecomposition.actual_spectral_decomposition
+#check StrongSpherical.NormalDecomposition.finite_kernel_decomposition_Icc
+#check StrongSpherical.NormalDecomposition.actual_kernel_decomposition
+#check StrongSpherical.NormalDecomposition.sum_kernelPiece
+#check StrongSpherical.NormalDecomposition.actual_positive_piece_L2

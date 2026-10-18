@@ -1,0 +1,37 @@
+import ProductOscillation
+
+/-! Transitive axiom audit of every public declaration in ProductOscillation.lean. -/
+
+#print axioms StrongSpherical.ProductOscillation.coordinateVector
+#print axioms StrongSpherical.ProductOscillation.coordinateVector_apply
+#print axioms StrongSpherical.ProductOscillation.coordinateDerivative
+#print axioms StrongSpherical.ProductOscillation.mixedDerivative
+#print axioms StrongSpherical.ProductOscillation.tsupport_partial_subset
+#print axioms StrongSpherical.ProductOscillation.hasCompactSupport_partial
+#print axioms StrongSpherical.ProductOscillation.contDiff_partial
+#print axioms StrongSpherical.ProductOscillation.tsupport_mixedDerivative_subset
+#print axioms StrongSpherical.ProductOscillation.hasCompactSupport_mixedDerivative
+#print axioms StrongSpherical.ProductOscillation.contDiff_mixedDerivative
+#print axioms StrongSpherical.ProductOscillation.weight
+#print axioms StrongSpherical.ProductOscillation.continuous_weight
+#print axioms StrongSpherical.ProductOscillation.hasLineDerivAt_weight_insert
+#print axioms StrongSpherical.ProductOscillation.integrable_weight_mul
+#print axioms StrongSpherical.ProductOscillation.integral_weight_mul_eq_neg_partial
+#print axioms StrongSpherical.ProductOscillation.integral_weight_transfer
+#print axioms StrongSpherical.ProductOscillation.integral_product_eq_mixedDerivative
+#print axioms StrongSpherical.ProductOscillation.norm_integral_product_le
+#print axioms StrongSpherical.ProductOscillation.supportBox
+#print axioms StrongSpherical.ProductOscillation.supportBox_mono
+#print axioms StrongSpherical.ProductOscillation.integral_mixedDerivative_eq_setIntegral
+#print axioms StrongSpherical.ProductOscillation.productPhase
+#print axioms StrongSpherical.ProductOscillation.product_centeredWave_eq_exp
+#print axioms StrongSpherical.ProductOscillation.quadratic_integration_by_parts
+#print axioms StrongSpherical.ProductOscillation.norm_integral_quadratic_product_le
+#print axioms StrongSpherical.ProductOscillation.exists_uniform_product_bound
+
+/- Review the actual derivative, amplitude hypotheses and uniform quantifiers. -/
+#print StrongSpherical.ProductOscillation.coordinateDerivative
+#print StrongSpherical.ProductOscillation.mixedDerivative
+#check StrongSpherical.ProductOscillation.quadratic_integration_by_parts
+#check StrongSpherical.ProductOscillation.norm_integral_quadratic_product_le
+#check StrongSpherical.ProductOscillation.exists_uniform_product_bound

@@ -1,0 +1,56 @@
+import SpherePolar
+import NormalRadialDensity
+import ScalarApproximation
+import QuadraticRadialChange
+import NormalSphereLimit
+
+/-! Public declarations for the genuine coarea limit (6.6). -/
+
+#print axioms StrongSpherical.SpherePolar.integral_volumeIoiPow
+#print axioms StrongSpherical.SpherePolar.integrable_polar_pullback
+#print axioms StrongSpherical.SpherePolar.integral_eq_polar_of_integrable
+#print axioms StrongSpherical.SpherePolar.integral_eq_polar
+#print axioms StrongSpherical.NormalRadialDensity.angular
+#print axioms StrongSpherical.NormalRadialDensity.density
+#print axioms StrongSpherical.NormalRadialDensity.norm_coe_sphere
+#print axioms StrongSpherical.NormalRadialDensity.norm_smul_sphere
+#print axioms StrongSpherical.NormalRadialDensity.continuous_angular
+#print axioms StrongSpherical.NormalRadialDensity.integrable_angular_integrand
+#print axioms StrongSpherical.NormalRadialDensity.continuous_density
+#print axioms StrongSpherical.NormalRadialDensity.angular_cutoff_eq_zero_of_small_radius
+#print axioms StrongSpherical.NormalRadialDensity.angular_cutoff_eq_zero_of_large_radius
+#print axioms StrongSpherical.NormalRadialDensity.angular_cutoff_zero
+#print axioms StrongSpherical.NormalRadialDensity.support_angular_cutoff_subset
+#print axioms StrongSpherical.NormalRadialDensity.hasCompactSupport_angular_cutoff
+#print axioms StrongSpherical.NormalRadialDensity.density_eq_zero_of_le_neg_one
+#print axioms StrongSpherical.NormalRadialDensity.density_eq_zero_of_two_le
+#print axioms StrongSpherical.NormalRadialDensity.support_density_subset
+#print axioms StrongSpherical.NormalRadialDensity.tsupport_density_subset
+#print axioms StrongSpherical.NormalRadialDensity.hasCompactSupport_density
+#print axioms StrongSpherical.NormalRadialDensity.integrable_density
+#print axioms StrongSpherical.NormalRadialDensity.density_zero
+#print axioms StrongSpherical.ScalarApproximation.rescaled_integral_eq
+#print axioms StrongSpherical.ScalarApproximation.positive_scales_tendsto
+#print axioms StrongSpherical.ScalarApproximation.dyadic_tendsto
+#print axioms StrongSpherical.QuadraticRadialChange.integral_quadratic
+#print axioms StrongSpherical.NormalSphereLimit.quadratic_coarea
+#print axioms StrongSpherical.NormalSphereLimit.approximate_pairing
+#print axioms StrongSpherical.NormalSphereLimit.normalization_mul_density_zero
+#print axioms StrongSpherical.NormalSphereLimit.approximateKernel_tendsto
+#print axioms StrongSpherical.NormalSphereLimit.integrable_piece_pairing
+#print axioms StrongSpherical.NormalSphereLimit.finite_pairing
+#print axioms StrongSpherical.NormalSphereLimit.continuous_test_decomposition
+#print axioms StrongSpherical.NormalSphereLimit.compact_test_decomposition
+
+/-! Review entry points and their complete elaborated types. -/
+
+#check StrongSpherical.SpherePolar.integral_eq_polar
+#check StrongSpherical.NormalRadialDensity.continuous_density
+#check StrongSpherical.NormalRadialDensity.density_zero
+#check StrongSpherical.ScalarApproximation.dyadic_tendsto
+#check StrongSpherical.QuadraticRadialChange.integral_quadratic
+#check StrongSpherical.NormalSphereLimit.quadratic_coarea
+#check StrongSpherical.NormalSphereLimit.normalization_mul_density_zero
+#check StrongSpherical.NormalSphereLimit.approximateKernel_tendsto
+#check StrongSpherical.NormalSphereLimit.continuous_test_decomposition
+#check StrongSpherical.NormalSphereLimit.compact_test_decomposition

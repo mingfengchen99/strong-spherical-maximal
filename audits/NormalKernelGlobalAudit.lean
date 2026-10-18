@@ -1,0 +1,64 @@
+import NormalKernelC1
+import LogarithmicScales
+import NormalKernelGlobal
+import NormalFrequencyPieces
+
+/-! Public declaration and final statement audit for the global normal-frequency estimates. -/
+
+#print axioms StrongSpherical.NormalKernelC1.inverseBeta
+#print axioms StrongSpherical.NormalKernelC1.inverseBeta_coe
+#print axioms StrongSpherical.NormalKernelC1.contDiff_inverseFourier
+#print axioms StrongSpherical.NormalKernelC1.contDiff_phase
+#print axioms StrongSpherical.NormalKernelC1.fderiv_phase
+#print axioms StrongSpherical.NormalKernelC1.norm_fderiv_phase_le
+#print axioms StrongSpherical.NormalKernelC1.contDiff_normalKernel
+#print axioms StrongSpherical.NormalKernelC1.support_normalKernel_subset
+#print axioms StrongSpherical.NormalKernelC1.tsupport_normalKernel_subset
+#print axioms StrongSpherical.NormalKernelC1.hasCompactSupport_normalKernel
+#print axioms StrongSpherical.NormalKernelC1.support_normalKernel_box
+#print axioms StrongSpherical.NormalKernelC1.norm_fderiv_normalKernel_le
+#print axioms StrongSpherical.NormalKernelC1.exists_normalKernel_C1_bound
+#print axioms StrongSpherical.NormalKernelC1.exists_c1Norm_normalKernel_bound
+#print axioms StrongSpherical.LogarithmicScales.decayExponent
+#print axioms StrongSpherical.LogarithmicScales.halfDimension
+#print axioms StrongSpherical.LogarithmicScales.scaleSlope
+#print axioms StrongSpherical.LogarithmicScales.scaleAt
+#print axioms StrongSpherical.LogarithmicScales.dyadicConstant
+#print axioms StrongSpherical.LogarithmicScales.logarithmicConstant
+#print axioms StrongSpherical.LogarithmicScales.scaleSlope_pos
+#print axioms StrongSpherical.LogarithmicScales.halfDimension_nonneg
+#print axioms StrongSpherical.LogarithmicScales.scaleAt_ge_three
+#print axioms StrongSpherical.LogarithmicScales.scaleAt_lower
+#print axioms StrongSpherical.LogarithmicScales.scaleAt_upper
+#print axioms StrongSpherical.LogarithmicScales.dyadicConstant_pos
+#print axioms StrongSpherical.LogarithmicScales.logarithmicConstant_pos
+#print axioms StrongSpherical.LogarithmicScales.scaleAt_error
+#print axioms StrongSpherical.LogarithmicScales.scaleAt_bound
+#print axioms StrongSpherical.LogarithmicScales.dyadic_scale_bound
+#print axioms StrongSpherical.LogarithmicScales.one_add_logb_le
+#print axioms StrongSpherical.LogarithmicScales.logarithmic_scale_bound
+#print axioms StrongSpherical.LogarithmicScales.exists_logarithmic_scale
+#print axioms StrongSpherical.LogarithmicScales.exists_dyadic_scale
+#print axioms StrongSpherical.NormalKernelGlobal.frequency_coefficient_le
+#print axioms StrongSpherical.NormalKernelGlobal.exists_gap_bound_of_local_C1
+#print axioms StrongSpherical.NormalKernelGlobal.exists_normalKernel_gap_bound
+#print axioms StrongSpherical.NormalKernelGlobal.global_normalKernel_L2
+#print axioms StrongSpherical.NormalKernelGlobal.dyadic_decay_eq
+#print axioms StrongSpherical.NormalKernelGlobal.dyadic_square_eq
+#print axioms StrongSpherical.NormalKernelGlobal.dyadic_normalKernel_L2
+#print axioms StrongSpherical.NormalKernelGlobal.single_piece_C1
+#print axioms StrongSpherical.NormalKernelGlobal.single_piece_L2
+#print axioms StrongSpherical.NormalFrequencyPieces.normalization
+#print axioms StrongSpherical.NormalFrequencyPieces.normalization_pos
+#print axioms StrongSpherical.NormalFrequencyPieces.normalizedCutoff
+#print axioms StrongSpherical.NormalFrequencyPieces.dyadicPiece
+#print axioms StrongSpherical.NormalFrequencyPieces.dyadicPiece_eq_normalKernel
+#print axioms StrongSpherical.NormalFrequencyPieces.normalizedCutoff_contDiff
+#print axioms StrongSpherical.NormalFrequencyPieces.normalizedCutoff_compact
+#print axioms StrongSpherical.NormalFrequencyPieces.tsupport_normalizedCutoff_subset
+
+#check StrongSpherical.NormalKernelGlobal.global_normalKernel_L2
+#check StrongSpherical.NormalKernelGlobal.single_piece_C1
+#check StrongSpherical.NormalKernelGlobal.single_piece_L2
+#check StrongSpherical.NormalKernelC1.exists_normalKernel_C1_bound
+#check StrongSpherical.NormalFrequencyPieces.dyadicPiece

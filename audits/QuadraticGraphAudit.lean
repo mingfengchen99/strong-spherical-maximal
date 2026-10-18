@@ -1,0 +1,84 @@
+import QuadraticGraph
+
+/-! Transitive axiom audit of every public declaration written in QuadraticGraph.lean. -/
+
+#print axioms StrongSpherical.QuadraticGraph.oscillation
+#print axioms StrongSpherical.QuadraticGraph.norm_oscillation
+#print axioms StrongSpherical.QuadraticGraph.oscillation_add
+#print axioms StrongSpherical.QuadraticGraph.conj_oscillation
+#print axioms StrongSpherical.QuadraticGraph.continuous_oscillation
+#print axioms StrongSpherical.QuadraticGraph.hasDerivAt_oscillation_mul
+#print axioms StrongSpherical.QuadraticGraph.spatialInput
+#print axioms StrongSpherical.QuadraticGraph.spatialInput_apply
+#print axioms StrongSpherical.QuadraticGraph.normalInput
+#print axioms StrongSpherical.QuadraticGraph.GraphCoefficients
+#print axioms StrongSpherical.QuadraticGraph.graph
+#print axioms StrongSpherical.QuadraticGraph.graphGap
+#print axioms StrongSpherical.QuadraticGraph.phase_difference
+#print axioms StrongSpherical.QuadraticGraph.continuous_graphGap
+#print axioms StrongSpherical.QuadraticGraph.frequencyKernel
+#print axioms StrongSpherical.QuadraticGraph.inputKernel
+#print axioms StrongSpherical.QuadraticGraph.graphOperator
+#print axioms StrongSpherical.QuadraticGraph.gramKernel
+#print axioms StrongSpherical.QuadraticGraph.pairAmplitude
+#print axioms StrongSpherical.QuadraticGraph.inputSupport
+#print axioms StrongSpherical.QuadraticGraph.pairAmplitude_eq_zero_of_separated
+#print axioms StrongSpherical.QuadraticGraph.gramKernel_eq_zero_of_separated
+#print axioms StrongSpherical.QuadraticGraph.frequencyDecay
+#print axioms StrongSpherical.QuadraticGraph.integrable_frequencyDecay
+#print axioms StrongSpherical.QuadraticGraph.frequencyDecay_nonneg
+#print axioms StrongSpherical.QuadraticGraph.continuous_frequencyDecay
+#print axioms StrongSpherical.QuadraticGraph.frequencyMass
+#print axioms StrongSpherical.QuadraticGraph.frequencyMass_nonneg
+#print axioms StrongSpherical.QuadraticGraph.frequencyMass_pos
+#print axioms StrongSpherical.QuadraticGraph.integral_frequencyDecay_sub
+#print axioms StrongSpherical.QuadraticGraph.double_frequency_integral_le
+#print axioms StrongSpherical.QuadraticGraph.continuous_frequencyKernel
+#print axioms StrongSpherical.QuadraticGraph.integrable_inputKernel
+#print axioms StrongSpherical.QuadraticGraph.norm_frequencyKernel_le
+#print axioms StrongSpherical.QuadraticGraph.gramKernel_conj_symm
+#print axioms StrongSpherical.QuadraticGraph.integrable_gramKernel_integrand
+#print axioms StrongSpherical.QuadraticGraph.modulation
+#print axioms StrongSpherical.QuadraticGraph.frequencyFactor
+#print axioms StrongSpherical.QuadraticGraph.modulation_eq_oscillation
+#print axioms StrongSpherical.QuadraticGraph.norm_modulation
+#print axioms StrongSpherical.QuadraticGraph.continuous_modulation
+#print axioms StrongSpherical.QuadraticGraph.hasLineDerivAt_modulation
+#print axioms StrongSpherical.QuadraticGraph.modulation_integration_by_parts
+#print axioms StrongSpherical.QuadraticGraph.modulation_integration_by_parts_twice
+#print axioms StrongSpherical.QuadraticGraph.norm_frequencyFactor
+#print axioms StrongSpherical.QuadraticGraph.norm_integral_modulation_le
+#print axioms StrongSpherical.QuadraticGraph.sq_frequency_mul_norm_integral_modulation_le
+#print axioms StrongSpherical.QuadraticGraph.norm_integral_modulation_le_decay
+#print axioms StrongSpherical.QuadraticGraph.norm_integral_modulation_le_frequencyDecay
+#print axioms StrongSpherical.QuadraticGraph.spatialDecay
+#print axioms StrongSpherical.QuadraticGraph.continuous_spatialDecay
+#print axioms StrongSpherical.QuadraticGraph.spatialDecay_nonneg
+#print axioms StrongSpherical.QuadraticGraph.integral_spatialDecay_nonneg
+#print axioms StrongSpherical.QuadraticGraph.integral_spatialDecay_zero
+#print axioms StrongSpherical.QuadraticGraph.integral_spatialDecay_symm
+#print axioms StrongSpherical.QuadraticGraph.integral_spatialDecay_le
+#print axioms StrongSpherical.QuadraticGraph.localizedSpatialDecay
+#print axioms StrongSpherical.QuadraticGraph.localizedSpatialDecay_nonneg
+#print axioms StrongSpherical.QuadraticGraph.integrable_localizedSpatialDecay
+#print axioms StrongSpherical.QuadraticGraph.integral_localizedSpatialDecay
+#print axioms StrongSpherical.QuadraticGraph.localizedSpatialDecay_neg
+#print axioms StrongSpherical.QuadraticGraph.spatialProfile
+#print axioms StrongSpherical.QuadraticGraph.spatialProfile_nonneg
+#print axioms StrongSpherical.QuadraticGraph.spatialProfile_symm
+#print axioms StrongSpherical.QuadraticGraph.integrable_spatialProfile
+#print axioms StrongSpherical.QuadraticGraph.integral_spatialProfile
+#print axioms StrongSpherical.QuadraticGraph.integral_spatialProfile_le
+#print axioms StrongSpherical.QuadraticGraph.spatialProfile_eq_cutoff
+#print axioms StrongSpherical.QuadraticGraph.integral_spatialProfile_column_le
+
+/- Inspect the actual operator, derivatives, hypotheses, and scale-dependent bounds. -/
+#print StrongSpherical.QuadraticGraph.GraphCoefficients
+#print StrongSpherical.QuadraticGraph.graphOperator
+#print StrongSpherical.QuadraticGraph.gramKernel
+#check StrongSpherical.QuadraticGraph.modulation_integration_by_parts_twice
+#check StrongSpherical.QuadraticGraph.norm_integral_modulation_le_frequencyDecay
+#check StrongSpherical.QuadraticGraph.double_frequency_integral_le
+#check StrongSpherical.QuadraticGraph.integral_spatialDecay_symm
+#check StrongSpherical.QuadraticGraph.integral_spatialProfile_le
+#check StrongSpherical.QuadraticGraph.integral_spatialProfile_column_le

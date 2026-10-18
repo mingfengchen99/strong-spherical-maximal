@@ -1,0 +1,23 @@
+import QuadraticGraphL2
+
+/-! Transitive axiom audit of every public declaration in QuadraticGraphL2.lean. -/
+
+#print axioms StrongSpherical.QuadraticGraphL2.integral_spatialProfile_zero
+#print axioms StrongSpherical.QuadraticGraphL2.lintegral_input_row_le
+#print axioms StrongSpherical.QuadraticGraphL2.norm_input_le_zeroProfile
+#print axioms StrongSpherical.QuadraticGraphL2.lintegral_input_column_le
+#print axioms StrongSpherical.QuadraticGraphL2.integral_norm_frequency_le
+#print axioms StrongSpherical.QuadraticGraphL2.support_inputKernel_subset
+#print axioms StrongSpherical.QuadraticGraphL2.norm_inputKernel_le
+#print axioms StrongSpherical.QuadraticGraphL2.memLp_inputKernel
+#print axioms StrongSpherical.QuadraticGraphL2.coarseBound
+#print axioms StrongSpherical.QuadraticGraphL2.kernelControl_of_input_support
+#print axioms StrongSpherical.QuadraticGraphL2.sqrt_gram_scale
+#print axioms StrongSpherical.QuadraticGraphL2.exists_uniform_graphL2Operator
+#print axioms StrongSpherical.QuadraticGraphL2.lemma_3_2
+
+#print StrongSpherical.QuadraticGraph.graphOperator
+#check StrongSpherical.QuadraticGraphL2.kernelControl_of_input_support
+#check StrongSpherical.QuadraticGraphL2.memLp_inputKernel
+#check StrongSpherical.QuadraticGraphL2.exists_uniform_graphL2Operator
+#check StrongSpherical.QuadraticGraphL2.lemma_3_2
