@@ -1,0 +1,24 @@
+.lake/
+
+# Generated verification output and Python bytecode
+.verification/
+__pycache__/
+*.py[cod]
+
+# Local editor and operating-system files
+.DS_Store
+.vscode/
+.idea/
+*~
+*.swp
+*.swo
+
+# Local credentials and environment configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Personal publishing instructions
+GITHUB_UPLOAD*.md
