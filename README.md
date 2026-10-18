@@ -3,7 +3,7 @@
 A Lean 4 / mathlib formalization of the main strong spherical maximal inequality in
 [Mingfeng Chen, *Sharp Lᵖ estimates for the strong spherical maximal operator*, arXiv:2609.32421v2](https://arxiv.org/abs/2609.32421v2).
 
-The final theorem is proved in [`Main.lean`](Main.lean):
+The final theorem is proved in [`Main.lean`](src/Main.lean):
 
 ```lean
 import Main
@@ -21,7 +21,7 @@ The expanded Lean statement is `StrongSpherical.strong_spherical_maximal_bound`.
 The repository contains 104 proof modules (18,860 lines). The main proof includes
 the oscillatory estimates, Lemma 3.2, Proposition 1.3, Lemma 1.4, the normal-frequency
 decomposition, interpolation, summation, and the `p = ∞` endpoint. The precise scope
-is the unchanged `MainTheorem` in [`Definitions.lean`](Definitions.lean); informal
+is the unchanged `MainTheorem` in [`Definitions.lean`](src/Definitions.lean); informal
 remarks and bibliography in the paper are not separate formalization targets.
 
 ## Build
@@ -64,20 +64,21 @@ contains dependencies and build products and is excluded from Git.
 
 | Entry point | Content |
 | --- | --- |
-| [`Definitions.lean`](Definitions.lean) | Measures, operators, critical exponent, original target |
-| [`Quadratic1D.lean`](Quadratic1D.lean), [`ProductOscillation.lean`](ProductOscillation.lean) | One-dimensional and product oscillatory estimates |
-| [`QuadraticGraphL2.lean`](QuadraticGraphL2.lean) | Lemma 3.2: quadratic graph `L²` estimate |
-| [`LocalEstimate.lean`](LocalEstimate.lean) | Proposition 1.3: local maximal estimate |
-| [`GlobalKernelEstimate.lean`](GlobalKernelEstimate.lean) | Lemma 1.4: estimate over all positive radii |
-| [`NormalDecomposition.lean`](NormalDecomposition.lean), [`NormalSphereLimit.lean`](NormalSphereLimit.lean) | Actual frequency pieces and spherical-measure limit |
-| [`NormalPieceInterpolation.lean`](NormalPieceInterpolation.lean) | Sharp `Lᵖ` estimates for the frequency pieces |
-| [`NormalPieceSummation.lean`](NormalPieceSummation.lean), [`SphericalDomination.lean`](SphericalDomination.lean) | Summation and domination of the original spherical maximal operator |
-| [`SphericalLInfinity.lean`](SphericalLInfinity.lean), [`SphericalLp.lean`](SphericalLp.lean), [`Main.lean`](Main.lean) | Endpoint, finite exponents, final theorem |
+| [`Definitions.lean`](src/Definitions.lean) | Measures, operators, critical exponent, original target |
+| [`Quadratic1D.lean`](src/Quadratic1D.lean), [`ProductOscillation.lean`](src/ProductOscillation.lean) | One-dimensional and product oscillatory estimates |
+| [`QuadraticGraphL2.lean`](src/QuadraticGraphL2.lean) | Lemma 3.2: quadratic graph `L²` estimate |
+| [`LocalEstimate.lean`](src/LocalEstimate.lean) | Proposition 1.3: local maximal estimate |
+| [`GlobalKernelEstimate.lean`](src/GlobalKernelEstimate.lean) | Lemma 1.4: estimate over all positive radii |
+| [`NormalDecomposition.lean`](src/NormalDecomposition.lean), [`NormalSphereLimit.lean`](src/NormalSphereLimit.lean) | Actual frequency pieces and spherical-measure limit |
+| [`NormalPieceInterpolation.lean`](src/NormalPieceInterpolation.lean) | Sharp `Lᵖ` estimates for the frequency pieces |
+| [`NormalPieceSummation.lean`](src/NormalPieceSummation.lean), [`SphericalDomination.lean`](src/SphericalDomination.lean) | Summation and domination of the original spherical maximal operator |
+| [`SphericalLInfinity.lean`](src/SphericalLInfinity.lean), [`SphericalLp.lean`](src/SphericalLp.lean), [`Main.lean`](src/Main.lean) | Endpoint, finite exponents, final theorem |
 
-The proof modules are at the repository root. Supporting files are organized as
-follows:
+All 104 proof modules are in `src/`. Lake uses this source directory, so imports
+such as `import Main` remain unchanged. The repository is organized as follows:
 
 ```text
+src/                  Lean proof modules (start with Definitions.lean and Main.lean)
 audits/               Lean axiom and theorem-type audit entry points
 docs/README.md        Verification procedure and audit scope
 docs/verification/    Reviewed proof-source SHA256 snapshot

@@ -11,6 +11,7 @@ python3 scripts/verify.py --check-snapshot
 [`scripts/verify.py`](../scripts/verify.py) builds every default target, checks the
 proof sources, and audits their transitive axiom dependencies. The approved
 snapshot contains 104 proof modules and 1,444 named public source declarations.
+The proof sources are in [`src/`](../src/); module names and imports are unchanged.
 
 ## Main theorem
 
@@ -48,7 +49,9 @@ directory. GitHub Actions runs the same verification after building the project.
 ## Reviewed source snapshot
 
 [`verification/sources.sha256`](verification/sources.sha256) records the hashes of
-the reviewed proof sources. `--check-snapshot` requires an exact match. To verify
+the reviewed proof sources, with filenames relative to `src/`. Moving the files
+into this directory did not change their contents or recorded hashes.
+`--check-snapshot` requires an exact match. To verify
 intentional changes or added modules, use `python3 scripts/verify.py` without that
 option, review the changes, and then update the snapshot as appropriate. New proof
 modules must be registered as default targets and libraries in `lakefile.toml`.

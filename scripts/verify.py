@@ -11,6 +11,7 @@ import sys
 
 
 ROOT = Path(__file__).resolve().parents[1]
+SOURCES = ROOT / "src"
 LOGS = ROOT / ".verification"
 ALLOWED_AXIOMS = {"propext", "Classical.choice", "Quot.sound"}
 
@@ -78,8 +79,11 @@ def sources_and_declarations(check_snapshot):
     libraries = re.findall(r'\[\[lean_lib\]\]\s*name = "([\w]+)"', config)
     require(len(modules) == len(set(modules)), "Duplicate default target")
     require(set(modules) == set(libraries), "Default targets and libraries differ")
-    require(set(ROOT.glob("*.lean")) == {ROOT / (m + ".lean") for m in modules},
-            "Every root proof module must be a registered default target")
+    require(re.search(r'^srcDir = "src"$', config, re.M) is not None,
+            "Expected the package source directory to be src/")
+    require(not any(ROOT.glob("*.lean")), "Proof modules belong in src/")
+    require(set(SOURCES.rglob("*.lean")) == {SOURCES / (m + ".lean") for m in modules},
+            "Every proof module in src/ must be a registered default target")
     baseline = {}
     if check_snapshot:
         snapshot = ROOT / "docs/verification/sources.sha256"
@@ -91,7 +95,7 @@ def sources_and_declarations(check_snapshot):
 
     declarations = []
     for module in modules:
-        path = ROOT / (module + ".lean")
+        path = SOURCES / (module + ".lean")
         data = path.read_bytes()
         if check_snapshot:
             require(hashlib.sha256(data).hexdigest() == baseline[path.name],
